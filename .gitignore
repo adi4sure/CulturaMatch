@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Build
+frontend/dist/
+
+# Data (keep structure, ignore runtime data)
+# backend/data/*.json - we keep seed data
+
+# AI model weights
+ai-service/model_weights.json
+ai-service/feedback_data.json
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
