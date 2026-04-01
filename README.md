@@ -1,4 +1,4 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # 🌍 CulturaMatch
 
@@ -10,7 +10,7 @@
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)](https://python.org/)
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 
-A full-stack cultural exchange platform connecting people worldwide for **skill sharing**, **language learning**, and **cultural interaction** — powered by **AI matching** using Neural Networks & Fuzzy Logic.
+A cultural exchange platform powered by **AI matching** (Neural Networks & Fuzzy Logic) that connects people worldwide for skill sharing, language learning, and cultural interaction.
 
 <br>
 
@@ -20,49 +20,16 @@ A full-stack cultural exchange platform connecting people worldwide for **skill 
 
 ---
 
-## 📑 Table of Contents
+## 📸 Screenshots
 
-- [✨ Features](#-features)
-- [📸 Interface Screenshots](#-interface-screenshots)
-- [🏗️ Architecture](#️-architecture)
-- [🧠 AI Matching Pipeline](#-ai-matching-pipeline)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [🚀 Quick Start](#-quick-start)
-- [👥 Demo Users](#-demo-users)
-- [📁 Project Structure](#-project-structure)
-- [📄 License](#-license)
-
----
-
-## ✨ Features
-
-| Feature | Description |
-|---------|-------------|
-| 🤖 **AI-Powered Matching** | Fuzzy logic + neural network for intelligent cultural exchange partner matching |
-| 🎨 **Skill Sharing** | Share and learn skills like music, cooking, coding, photography, and more |
-| 🗣️ **Language Exchange** | Find native speakers and practice languages together |
-| 💬 **Real-time Chat** | Instant messaging with your matched cultural exchange partners |
-| 📅 **Virtual Meetups** | Schedule and manage cultural exchange sessions |
-| ⭐ **Feedback System** | Rate interactions to improve AI recommendations |
-| 🌙 **Dark Glassmorphism UI** | Modern, premium design with smooth animations and gradients |
-| 🔐 **JWT Authentication** | Secure user registration and login with encrypted passwords |
-
----
-
-## 📸 Interface Screenshots
-
-### 🏠 Landing Page
-> The hero section features an animated globe, floating skill tags, platform statistics, and a stunning dark glassmorphism design with gradient accents.
-
+### Landing Page
 <div align="center">
 <img src="screenshots/landing_page.png" alt="Landing Page" width="90%">
 </div>
 
 ---
 
-### 📝 Multi-Step Registration Flow
-> A guided 3-step registration process: **Personal Details → Skills & Languages → Interests & Bio**
-
+### Registration (3-Step Flow)
 <div align="center">
 <table>
   <tr>
@@ -78,57 +45,142 @@ A full-stack cultural exchange platform connecting people worldwide for **skill 
 
 ---
 
-### 🔑 Login Page
-> Clean, centered sign-in form with glassmorphism card, gradient CTA button, and seamless navigation.
-
+### Login
 <div align="center">
 <img src="screenshots/login_page.png" alt="Login Page" width="90%">
 </div>
 
 ---
 
-### 📊 Dashboard
-> Personalized overview showing match count, conversations, meetups, feedback stats, recent AI matches with compatibility scores, and user profile snapshot.
-
+### Dashboard
 <div align="center">
 <img src="screenshots/dashboard.png" alt="Dashboard" width="90%">
 </div>
 
 ---
 
-### 🔍 AI-Powered Discover Page
-> Browse AI-matched cultural exchange partners with compatibility percentages, skills, languages, interests, bios, and country indicators.
-
+### AI-Powered Discover Page
 <div align="center">
 <img src="screenshots/discover_matches.png" alt="Discover Matches" width="90%">
 </div>
 
 ---
 
-### 💬 Chat Interface
-> Contact sidebar with search, user avatars with country indicators, and a conversation panel for real-time cultural exchange messaging.
-
+### Chat
 <div align="center">
 <img src="screenshots/chat_page.png" alt="Chat Page" width="90%">
 </div>
 
 ---
 
-### 👤 User Profile
-> Detailed profile view displaying user avatar, bio, skills, languages spoken, and cultural interests — all with gradient-styled tag chips.
-
+### Profile
 <div align="center">
 <img src="screenshots/profile_page.png" alt="Profile Page" width="90%">
 </div>
 
 ---
 
-### 📅 Virtual Meetups
-> Schedule and manage cultural exchange sessions with partners. Create new meetups, set topics, and coordinate across time zones.
-
+### Virtual Meetups
 <div align="center">
 <img src="screenshots/meetups_page.png" alt="Meetups Page" width="90%">
 </div>
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+- **React 18** — Component-based UI library
+- **Vite 6** — Fast build tool and dev server
+- **React Router** — Client-side routing
+- **Lucide React** — Icon library
+- **CSS3** — Dark glassmorphism design with custom animations
+- **Google Fonts** — Inter & Outfit typography
+
+### Backend
+- **Node.js** — JavaScript runtime
+- **Express.js** — Web framework for REST API
+- **JSON Web Tokens (JWT)** — Authentication
+- **bcrypt** — Password hashing
+- **CORS** — Cross-origin resource sharing
+- **JSON File Storage** — Zero-config data persistence
+
+### AI Matching Service
+- **Python 3.9+** — Programming language
+- **Flask** — Lightweight web framework
+- **NumPy** — Numerical computing
+- **Fuzzy Logic** — Triangular & trapezoidal membership functions for compatibility scoring
+- **Neural Network** — Feedforward network (4→8→1) trained on user feedback
+
+---
+
+## 📖 How to Use — Step by Step
+
+### Step 1: Clone & Install
+
+```bash
+git clone https://github.com/adi4sure/CulturaMatch.git
+cd CulturaMatch
+
+# Install frontend
+cd frontend && npm install
+
+# Install backend
+cd ../backend && npm install
+
+# (Optional) Install AI service
+cd ../ai-service && pip install -r requirements.txt
+```
+
+### Step 2: Start the Application
+
+Open **3 terminals** and run:
+
+```bash
+# Terminal 1 — Start Backend (port 5000)
+cd backend && npm run dev
+
+# Terminal 2 — Start Frontend (port 5173)
+cd frontend && npm run dev
+
+# Terminal 3 — Start AI Service (port 5001) [Optional]
+cd ai-service && python app.py
+```
+
+### Step 3: Open in Browser
+
+Go to **http://localhost:5173**
+
+### Step 4: Register Your Account
+
+1. Click **"Get Started"** on the landing page
+2. **Step 1** — Enter your name, email, password, and country
+3. **Step 2** — Select skills you can teach and languages you speak
+4. **Step 3** — Choose your cultural interests and write a short bio
+5. Click **"Create Account"**
+
+### Step 5: Explore the Dashboard
+
+After registration you'll land on your **Dashboard** showing:
+- Total matches found, conversations, meetups, and feedback stats
+- Your recent AI matches with compatibility scores
+- Your profile summary
+
+### Step 6: Discover Matches
+
+Go to the **Discover** page to see AI-matched cultural exchange partners ranked by compatibility percentage. Each card shows the user's country, bio, skills, languages, and interests.
+
+### Step 7: Start Chatting
+
+Open the **Chat** page to message your matches. Select a contact from the sidebar and start a conversation.
+
+### Step 8: Schedule Meetups
+
+Visit the **Meetups** page to schedule virtual cultural exchange sessions with your partners.
+
+### Step 9: Manage Your Profile
+
+Go to **Profile** to view and edit your skills, languages, interests, and bio.
 
 ---
 
@@ -146,93 +198,21 @@ A full-stack cultural exchange platform connecting people worldwide for **skill 
                          (users, chats, etc.)    Fuzzy Logic Engine
 ```
 
-The platform follows a **three-tier microservice architecture**:
-
-1. **Frontend** — React + Vite SPA with client-side routing, dark glassmorphism theme, and responsive design
-2. **Backend** — RESTful API handling authentication (JWT + bcrypt), user management, chat, and meetup operations
-3. **AI Service** — Python Flask microservice implementing the fuzzy logic + neural network matching engine
-
 ---
 
 ## 🧠 AI Matching Pipeline
 
-```
-┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│  User Profiles  │────▶│  Fuzzy Logic     │────▶│  Combined Score │
-│  (skills, langs,│     │  Engine (60%)    │     │  (weighted avg) │
-│   interests)    │     └──────────────────┘     └────────┬────────┘
-│                 │     ┌──────────────────┐              │
-│                 │────▶│  Neural Network  │──────────────┘
-│                 │     │  (40%)           │     ▼
-└─────────────────┘     └──────────────────┘   Ranked Matches
-```
-
 | Stage | Method | Details |
 |-------|--------|---------|
-| **1. Fuzzy Logic** | Triangular & trapezoidal membership functions | Scores compatibility across skill overlap, language similarity, cultural interest alignment, and timezone proximity |
-| **2. Neural Network** | Feedforward (4→8→1) | Trained on user feedback to personalize match quality predictions |
-| **3. Combined Score** | Weighted blend | **60% fuzzy** + **40% neural** prediction for final match ranking |
-
----
-
-## 🛠️ Tech Stack
-
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| **Frontend** | React 18, Vite, React Router, Lucide Icons | Modern SPA with dark glassmorphism UI |
-| **Backend** | Node.js, Express, JWT, bcrypt | RESTful API with secure authentication |
-| **AI Service** | Python Flask, NumPy, Fuzzy Logic | Intelligent matching engine |
-| **Storage** | JSON files (zero-config) | Lightweight file-based persistence |
-| **Typography** | Inter + Outfit (Google Fonts) | Premium modern typography |
-| **Design** | Dark glassmorphism, CSS animations | Stunning visual experience |
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- **Node.js 18+** — [Download](https://nodejs.org/)
-- **Python 3.9+** *(optional, for AI service)* — [Download](https://python.org/)
-
-### Installation & Setup
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/adi4sure/CulturaMatch.git
-cd CulturaMatch
-
-# 2. Install frontend dependencies
-cd frontend && npm install
-
-# 3. Install backend dependencies
-cd ../backend && npm install
-```
-
-### Running the Application
-
-Open **3 separate terminals** and run:
-
-```bash
-# Terminal 1 — Backend API (port 5000)
-cd backend && npm run dev
-
-# Terminal 2 — Frontend UI (port 5173)
-cd frontend && npm run dev
-
-# Terminal 3 — AI Service (port 5001) [Optional]
-cd ai-service
-pip install -r requirements.txt
-python app.py
-```
-
-Open **http://localhost:5173** in your browser 🎉
+| **Fuzzy Logic** | Membership functions | Scores skill overlap, language similarity, interest alignment, timezone proximity |
+| **Neural Network** | Feedforward (4→8→1) | Learns from user feedback to personalize match quality |
+| **Combined Score** | Weighted blend | 60% fuzzy + 40% neural = final match ranking |
 
 ---
 
 ## 👥 Demo Users
 
-The app comes pre-seeded with **6 demo users** from around the world:
+The app includes **6 pre-seeded users** for testing:
 
 | Name | Country | Skills | Languages |
 |------|---------|--------|-----------|
@@ -243,37 +223,25 @@ The app comes pre-seeded with **6 demo users** from around the world:
 | 🇲🇦 Fatima Al-Hassan | Morocco | Cooking, Pottery, Calligraphy | Arabic, French, English |
 | 🇰🇷 Yuki Park | South Korea | Film Making, Music, Coding | Korean, English, Japanese |
 
-> **Tip:** Register a new account to see the AI matching in action! The system will analyze your skills, languages, and interests to find the best cultural exchange partners.
-
 ---
 
 ## 📁 Project Structure
 
 ```
 CulturaMatch/
-├── frontend/               # React + Vite frontend
+├── frontend/                # React + Vite frontend
 │   ├── src/
-│   │   ├── pages/          # Page components
-│   │   │   ├── LandingPage.jsx     # Hero section + features
-│   │   │   ├── LoginPage.jsx       # Sign in form
-│   │   │   ├── RegisterPage.jsx    # 3-step registration
-│   │   │   ├── Dashboard.jsx       # User dashboard
-│   │   │   ├── DiscoverPage.jsx    # AI match discovery
-│   │   │   ├── ChatPage.jsx        # Messaging interface
-│   │   │   ├── ProfilePage.jsx     # User profile management
-│   │   │   └── MeetupPage.jsx      # Virtual meetup scheduling
-│   │   ├── App.jsx                 # Routing + auth context
-│   │   └── index.css               # Design system (400+ lines)
+│   │   ├── pages/           # All page components
+│   │   ├── App.jsx          # Routing + auth context
+│   │   └── index.css        # Design system
 │   └── index.html
-├── backend/                # Node.js + Express backend
-│   ├── server.js           # Full REST API
-│   ├── data/               # JSON file storage
-│   └── package.json
-├── ai-service/             # Python Flask AI service
-│   ├── app.py              # Fuzzy logic + neural network
+├── backend/                 # Node.js + Express backend
+│   ├── server.js            # REST API
+│   └── data/                # JSON file storage
+├── ai-service/              # Python Flask AI service
+│   ├── app.py               # Fuzzy logic + neural network
 │   └── requirements.txt
-├── screenshots/            # Interface screenshots
-├── setup.bat               # Windows setup script
+├── screenshots/             # Interface screenshots
 └── README.md
 ```
 
@@ -281,7 +249,7 @@ CulturaMatch/
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
@@ -289,7 +257,4 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 **Built with ❤️ for cultural exchange and global connection**
 
-[⬆️ Back to Top](#-culturamatch)
-
 </div>
-]]>
